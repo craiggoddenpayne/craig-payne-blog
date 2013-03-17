@@ -1,0 +1,35 @@
+!!! 5
+html
+  head
+    meta(name='viewport', content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;')
+    title CraigPayne.info
+    link(rel='stylesheet', type='text/css', href='site.css')
+    script(type='application/javascript', src='jquery-1.9.1.min.js')
+    script(type='application/javascript', src='blog.js')
+  body
+    .content
+      .header
+        .headerSpacer
+        span.headerTitle { Craig Payne }
+        span.subHeaderTitle Adventures in programming
+        button.button(data-ref="Blog") Blog
+        button.button(data-ref="Ideas") Ideas
+        button.button(data-ref="Pi") Pi
+        button.button(data-ref="Contact") Contact
+      .blogState(id=0)
+      .mainContainer
+        .main
+        .mainRight
+          button.button Latest
+          button.button >>
+          button.button <<
+      .footer
+        .footerColumnContainer
+          .footerColumn
+            | Created and Designed by Craig Payne.
+            br 
+            | I wanted to create a responsive design, and use the Jade templating language. I host the server on my raspberry pi using node.js.
+            br
+            | If you would like to get in contact, my main email address is below, or contact me via social media
+            br
+            a.button(href='mailto:craigpayne1985@googlemail.com') craigpayne1985@googlemail.com
